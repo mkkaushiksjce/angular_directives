@@ -9,10 +9,10 @@
             <div class="header-elm">Angular Pagination Directive</div>
             <h3>Pagination Parameters</h3>
             <div>
-                <div class="pagination-param-wrap"><span class="pagination-param">Minimum page</span><input data-ng-keyup="verifyNumber($event)" class="pagination-params-input" type="number" min="0" data-ng-model="min" /></div>
-                <div class="pagination-param-wrap"><span class="pagination-param">Maximum page</span><input data-ng-keyup="verifyNumber($event)" class="pagination-params-input" type="number" min="0" data-ng-model="max" /></div>
+                <div class="pagination-param-wrap"><span class="pagination-param">Minimum page number</span><input data-ng-keyup="verifyNumber($event)" class="pagination-params-input" type="number" min="0" data-ng-model="min" /></div>
+                <div class="pagination-param-wrap"><span class="pagination-param">Maximum page number</span><input data-ng-keyup="verifyNumber($event)" class="pagination-params-input" type="number" min="0" data-ng-model="max" /></div>
                 <div class="pagination-param-wrap"><span class="pagination-param">Range</span><input data-ng-keyup="verifyNumber($event)" class="pagination-params-input" type="number" min="0" data-ng-model="range" /></div>
-                <div class="pagination-param-wrap"><span class="pagination-param">Selected Page</span><span class="pagination-params-input">{{pageNumber}}</span></div>
+                <div class="pagination-param-wrap"><span class="pagination-param">Selected Page number</span><span class="pagination-params-input">{{pageNumber}}</span></div>
                 <paginate min={{min}} max={{max}} range={{range}} pagination-callback="paginationCallback(currPage)"></paginate>
             </div>
         </div>

@@ -1,32 +1,45 @@
-*{
+* {
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Open Sans', sans-serif;
 }
 
-.pagination-wrap{
+.pagination-wrap {
     max-width: 1024px;
     margin: 0 auto;
 }
 
-.header-elm{
+.header-elm {
     text-align: center;
     font-size: 24px;
     margin: 25px 0;
 }
 
-.pagination-param-wrap{
+.pagination-param-wrap {
     margin: 10px 0;
 }
 
-.pagination-param-wrap .pagination-param{
-    width: 200px;
+.pagination-param-wrap .pagination-param {
+    width: 300px;
     display: inline-block;
     font-size: 18px;
 }
 
-.pagination-param-wrap .pagination-params-input{
+.pagination-param-wrap .pagination-params-input {
     height: 40px;
     width: 250px;
     padding: 10px;
     font-size: 18px;
+}
+
+.pagination-elm {
+    display: inline-block;
+    border: 1px solid #ccc;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.pagination-elm:not(:last-child) {
+    border-right: 0;
 }

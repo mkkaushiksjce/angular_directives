@@ -13,7 +13,8 @@ App.controller("PaginationCtrl", ['$scope', function ($scope) {
     }
 
     $scope.paginationCallback = function(pageNumber){
-        $scope.pageNumber = pageNumber;
+        console.log('pagination called');
+        $scope.pageNumber = pageNumber + 1;
     }
 }]);
 
