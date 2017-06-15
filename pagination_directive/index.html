@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html data-ng-app="PaginationDirectiveApp">
     <head>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="pagination.css" />
     </head>
     <body>
-        <div data-ng-controller="PaginationCtrl">
-            <span>Name</span>
-            <input type="text" data-ng-model="name" />{{name}}
+        <div class="pagination-wrap" data-ng-controller="PaginationCtrl">
+            <div class="header-elm">Angular Pagination Directive</div>
+            <h3>Pagination Parameters</h3>
+            <div>
+                <div class="pagination-param-wrap"><span class="pagination-param">Minimum page</span><input data-ng-keyup="verifyNumber($event)" class="pagination-params-input" type="number" min="0" data-ng-model="min" /></div>
+                <div class="pagination-param-wrap"><span class="pagination-param">Maximum page</span><input data-ng-keyup="verifyNumber($event)" class="pagination-params-input" type="number" min="0" data-ng-model="max" /></div>
+                <div class="pagination-param-wrap"><span class="pagination-param">Range</span><input data-ng-keyup="verifyNumber($event)" class="pagination-params-input" type="number" min="0" data-ng-model="range" /></div>
+            </div>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js"></script>
         <script src="app.js"></script>
